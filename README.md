@@ -23,11 +23,21 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
 1. Hashing functions
+A hashing function translates a given key (usually a string) into an integer which will then be cut down to size to fit in a hash table. This way we can map key values to indices for quicker lookup times.
 2. Collision resolution
+Sometimes the hash function will result in the identical matching of keys to the same index. When this happens its called a collision. Collisions can be reconicled thorugh open addressing, or through chaining. Chaining implements a linked list at the time of collission, open addressing will simply point to the next open address.
 3. Performance of basic hash table operations
+Insertion, Deletion, and Search are all constant time due to the mapping of keys. 
 4. Load factor
+Load factor is the number of slots taken in the hash table, divided by the total number of slots. This gives us a rough idea of when we should increase or decrease the size of our hash table to decrease the chances of collissions. 
 5. Automatic resizing
+Based on our load factor, we can resize our hash table. Rule of thumb is double the size of our hash table after load factor reaches 0.7. 
 6. Various use cases for hash tables
+DNS Reconciliation
+Implementing a Cache
+Searching for elements within a large data set
+Finding duplicate elements in a dataset really fast
+Quickly storing and retrieiving elements from a data set
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
